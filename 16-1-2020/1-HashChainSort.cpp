@@ -9,7 +9,7 @@ void Chainsort(int arr[],int size)
 	for(l=0;l<size;l++)
 	{
 		if(arr[l]==0)
-			chain[0].push_back(l);
+			chain[0].push_back(0);
 		if(arr[l]==1)
 			chain[1].push_back(l);
 		if(arr[l]==2)
