@@ -3,6 +3,10 @@ using namespace std;
 
 #define SIZE 10000
 
+/*Logic:
+Use quadratic probing to search for the position of the first -1
+*/
+
 int position(int arr[],int size, int val,int start)
 {
   int jmp=2,tmp;                           //jump value for quadratic probing

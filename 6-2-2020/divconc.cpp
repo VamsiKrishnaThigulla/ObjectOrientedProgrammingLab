@@ -3,6 +3,10 @@
 
 using namespace std;
 
+/*
+Logic:
+Use Divide and Conquer strategy and Merge Sort to sort the union of arrays
+*/
 void merge(int b1,int b2,vector <int> v[])
 {
 	auto it1=v[b1].begin();

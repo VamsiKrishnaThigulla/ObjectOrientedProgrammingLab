@@ -2,6 +2,9 @@
 
 using namespace std;
 
+/*Use Divide and Conquer strategy
+Binary Search method is used to find the count of 1*/
+
 int  ct1(int a[],int beg, int mid,int end)
 {
 	if(beg==mid&&mid==end)		

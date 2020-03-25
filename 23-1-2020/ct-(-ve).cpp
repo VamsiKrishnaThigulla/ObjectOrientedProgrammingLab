@@ -2,7 +2,12 @@
 
 using namespace std;
 
-int  ct1(int a[],int beg, int mid,int end)
+/*
+Use Divide and Conquer strategy
+Binary Search method is used to find the count of negative numbers
+*/
+
+int  ctn(int a[],int beg, int mid,int end)
 {
 	if(beg==mid&&mid==end)		
 		{
@@ -12,7 +17,7 @@ int  ct1(int a[],int beg, int mid,int end)
 		 	return(0);
 		}		
 	else
-		return(ct1(a,beg,(beg+mid)/2,mid)+ct1(a,mid+1,(end+mid+1)/2,end));	
+		return(ctn(a,beg,(beg+mid)/2,mid)+ctn(a,mid+1,(end+mid+1)/2,end));	
 }
 
 int main()
@@ -25,5 +30,5 @@ int main()
 	{
 		cin>>a[i];
 	}
-	cout<<ct1(a,0,s/2,s);
+	cout<<ctn(a,0,s/2,s);
 }
