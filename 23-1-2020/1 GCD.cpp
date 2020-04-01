@@ -13,6 +13,11 @@ int gcd(int a,int b)
 		return gcd(b%a,a);	
 }
 
+int lcm(int )
+{
+	
+}
+
 int gcdivcon(int arr[],int begin,int end)
 {
 	if(begin==end)

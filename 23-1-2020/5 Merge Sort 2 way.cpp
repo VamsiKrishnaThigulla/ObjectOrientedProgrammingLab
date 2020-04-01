@@ -67,7 +67,7 @@ int main()
 	int arr[n];
 	cout<<"Enter the array"<<endl;
 	int i;
-	int a[n]
+	int a[n];
 	for(i=0;i<n;i++)
 	{
 		cin>>arr[i];
@@ -75,7 +75,7 @@ int main()
 
 	}
 	Mergetwo(a,0,n);
-	for(i=0;i<n;i++)
+	for(i=1;i<n+1;i++)
 	{
 		cout<<a[i];
 	}
